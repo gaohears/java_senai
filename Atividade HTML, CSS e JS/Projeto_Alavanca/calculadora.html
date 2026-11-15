@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="alavanca_favicon.svg" type="image/svg+xml">
+    <title>Calculadora - Alavanca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="marca">
+            <img src="alavanca_favicon.svg" alt="Logo Alavanca" width="100">
+            <span>Alavanca Licitações</span>
+        </a>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="como_funciona.html">Como funciona?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Calculadora de Viabilidade</h1>
+            <p>Calcule a viabilidade de sua proposta antes de enviá-la.</p>
+            <form class="form-calculadora">
+                <div class="campos-calculadora">
+                    <label for="valor-compra">Valor de Compra do Item por unidade:</label>
+                    <input type="number" id="valor-compra" step="0.01" min="0" placeholder="R$ 0,00">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" step="1" min="1" placeholder="0">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="frete-compra">Frete de Compra Total do Pedido (seu fornecedor):</label>
+                    <input type="number" id="frete-compra" step="0.01" min="0" placeholder="R$ 0,00">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="frete-entrega">Frete de Entrega Total do Pedido (para o Órgão):</label>
+                    <input type="number" id="frete-entrega" step="0.01" min="0" placeholder="R$ 0,00">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="impostos">Impostos (%)</label>
+                    <input type="number" id="impostos" step="0.01" min="0" placeholder="0 (sem %)">
+                    <small>Simples Nacional: use a alíquota efetiva da sua faixa. MEI: use 0%, pois o DAS é fixo </small>
+                </div>
+                <div class="campos-calculadora">
+                    <label for="valor-proposta">Valor da sua proposta por unidade:</label>
+                    <input type="number" id="valor-proposta" step="0.01" min="0" placeholder="R$ 0,00">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="preco-max-edital">Preço máximo do edital por unidade:</label>
+                    <input type="number" id="preco-max-edital" step="0.01" min="0" placeholder="R$ 0,00">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="prazo-pagamento">Prazo de Pagamento do Órgão (em dias):</label>
+                    <input type="number" id="prazo-pagamento" step="1" min="0" placeholder="0">
+                </div>
+                <div class="campos-calculadora">
+                    <label for="custo-capital">Custo do Capital (% ao mês)</label>
+                    <input type="number" id="custo-capital" step="0.01" min="0" placeholder="0 (sem %)">
+                    <small>Quanto custaria, por mês, o dinheiro que você usa para comprar e entregar o pedido (juros do banco ou o que ele renderia aplicado)</small>
+                </div>
+                <div class="campos-calculadora">
+                    <label for="margem-desejada">Margem Desejada (%):</label>
+                    <input type="number" id="margem-desejada" step="0.01" min="0" placeholder="0 (sem %)">
+                </div>
+                <div class="botao-calcular">
+                    <button type="button" onclick="calcularViabilidade()" class="botao">Calcular</button>
+                </div>
+                <div id="resultado" class="resultado"></div>
+            </form>
+        </section>
+    </main>
+    <footer><address>contato@alavanca.projeto | (61) 90000-0000</address>
+        <small>© 2026 Alavanca. Todos os direitos reservados.</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

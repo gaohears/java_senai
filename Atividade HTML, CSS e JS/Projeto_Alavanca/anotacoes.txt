@@ -1,0 +1,24 @@
+Nome da empresa: Alavanca
+Slogan:
+Público alvo: MEI, ME e EPP
+Serviços: Radar de Editais, Catálogo de Fornecedores, Calculadora de Viabilidade, Assessoria Documental, Analista de Propostas Concorrentes
+
+Radar de Editais:
+Frase: Encontre os editais que combinem com o seu negócio!
+Como funciona: Você informa seu ramo, região e capital disponível, e a Alavanca mostra as oportunidades certas.
+
+Catálogo de Fornecedores:
+Frase: Tenha acesso a fornecedores próximos.
+Como funciona: Encontre os fornecedores dos itens que deseja, por item, preço e proximidade!
+
+Calculadora de Viabilidade:
+Frase: Verifique sua margem de lucro e viabilidade antes de dar o seu lance.
+Como funciona: Preencha o valor pelo qual comprou o item, a quantidade, o valor da sua proposta, os impostos e frete e veja qual será sua margem de lucro, o lucro e se é viável ou não..
+
+Assessoria Documental:
+Frase: Não seja desclassificado por erro documental!
+Como funciona: Saiba quais as exigências documentais e tenha acesso a modelo pré-definidos para preenchimento.
+
+Análise de Propostas:
+Frase: Saiba se a proposta que está vencendo possui algum erro.
+Como funciona: A Alavanca analisa a documentação da proposta que está vencendo e informa se há margem para superar a proposta mesmo com um lance mais caro.
