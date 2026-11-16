@@ -1,5 +1,10 @@
+:root {
+    --azul: #0B1F4B;
+    --laranja: #FE3708;
+    --fundo-claro: #F2F5FA;
+}
 body {
-    background-color: white;
+    background-color: var(--fundo-claro);
     color: #565a5f;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
@@ -8,7 +13,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 8px 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #565a5f;
+    border-radius: 16px;
+}
+h1, h2{
+    color: var(--azul);
+}
+nav a:hover {
+    color: var(--laranja);
+}
+.card, carrossel, .etapas, .form-calculadora {
+    background-color: white;
 }
 .marca {
     display: flex;
@@ -49,10 +70,12 @@ nav a {
     font-family: inherit;
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 .botao:hover {
     background-color: #565a5f;
     color: white;
+    box-shadow: inset;
 }
 section {
     text-align: center;
@@ -81,11 +104,16 @@ footer {
 .card {
     border: 2px solid #565a5f;
     border-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
     width: 48%;
     box-sizing: border-box;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
 }
 .servicos {
     display: flex;
@@ -135,4 +163,21 @@ footer {
 .botao-calcular {
     text-align: center;
     margin-top: 20px;
+}
+.carrossel {
+    overflow: hidden;
+    border: 2px solid #565a5f;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.faixa {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
 }

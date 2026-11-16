@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="index.html" class="marca">
-            <img src="alavanca_favicon.svg" alt="Logo Alavanca" width="100">
+            <img src="alavanca_favicon.svg" alt="Logo Alavanca" width="56">
             <span>Alavanca Licitações</span>
         </a>
         <nav aria-label="Menu principal">
@@ -47,11 +47,17 @@
         </section>
         <section>
             <h2>Como a Alavanca ajuda?</h2>
-            <ul><li>Radar de Editais</li>
-                <li>Catálogo de Fornecedores</li>
-                <li>Calculadora de Viabilidade</li>
-                <li>Assessoria Documental</li>
-                <li>Análise de Propostas</li></ul>
+            <div class="carrossel">
+                <div class="faixa">
+                    <article class="slide"><h3>Radar de Editais</h3><p>Descubra os editais que combinam com o seu perfil e capacidade.</p></article>
+                    <article class="slide"><h3>Catálogo de Fornecedores</h3><p>Encontre fornecedores confiáveis e qualificados para suas necessidades.</p></article>
+                    <article class="slide"><h3>Calculadora de Viabilidade</h3><p>Calcule se vale a pena participar de um edital antes de se comprometer.</p></article>
+                    <article class="slide"><h3>Assessoria Documental</h3><p>Garanta que todos os documentos estejam em conformidade com os requisitos.</p></article>
+                    <article class="slide"><h3>Análise de Propostas</h3><p>Confira a documentação da proposta vencedora e encontre falhas que abrem espaço para recursos.</p></article>
+                </div>
+            </div>
+            <button type="button" onclick="slideAnterior()" aria-label="Slide anterior">◀</button>
+            <button type="button" onclick="slideSeguinte()" aria-label="Slide seguinte">▶</button>
         </section>
         <section>
             <h2>Pronto para dar o primeiro passo?</h2>
@@ -62,5 +68,6 @@
     <footer><address>contato@alavanca.projeto | (61) 90000-0000</address>
         <small>© 2026 Alavanca. Todos os direitos reservados.</small>
     </footer>
+    <script src="carrossel.js"></script>
 </body>
 </html>
