@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="alavanca_favicon.svg" type="image/svg+xml">
     <title>Alavanca Licitações</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,17 +50,19 @@
         </section>
         <section>
             <h2>Como a Alavanca ajuda?</h2>
-            <div class="carrossel">
-                <div class="faixa">
-                    <article class="slide"><h3>Radar de Editais</h3><p>Descubra os editais que combinam com o seu perfil e capacidade.</p></article>
-                    <article class="slide"><h3>Catálogo de Fornecedores</h3><p>Encontre fornecedores confiáveis e qualificados para suas necessidades.</p></article>
-                    <article class="slide"><h3>Calculadora de Viabilidade</h3><p>Calcule se vale a pena participar de um edital antes de se comprometer.</p></article>
-                    <article class="slide"><h3>Assessoria Documental</h3><p>Garanta que todos os documentos estejam em conformidade com os requisitos.</p></article>
-                    <article class="slide"><h3>Análise de Propostas</h3><p>Confira a documentação da proposta vencedora e encontre falhas que abrem espaço para recursos.</p></article>
+            <div class="area-carrossel">
+                <div class="carrossel">
+                    <div class="faixa">
+                        <article class="slide"><h3>Radar de Editais</h3><p>Descubra os editais que combinam com o seu perfil e capacidade.</p></article>
+                        <article class="slide"><h3>Catálogo de Fornecedores</h3><p>Encontre fornecedores confiáveis e qualificados para suas necessidades.</p></article>
+                        <article class="slide"><h3>Calculadora de Viabilidade</h3><p>Calcule se vale a pena participar de um edital antes de se comprometer.</p></article>
+                        <article class="slide"><h3>Assessoria Documental</h3><p>Garanta que todos os documentos estejam em conformidade com os requisitos.</p></article>
+                        <article class="slide"><h3>Análise de Propostas</h3><p>Confira a documentação da proposta vencedora e encontre falhas que abrem espaço para recursos.</p></article>
+                    </div>
                 </div>
+                <button type="button" onclick="slideAnterior()" aria-label="Slide anterior" class="seta seta-esquerda"> ❮</button>
+                <button type="button" onclick="slideSeguinte()" aria-label="Slide seguinte" class="seta seta-direita">❯</button>
             </div>
-            <button type="button" onclick="slideAnterior()" aria-label="Slide anterior">◀</button>
-            <button type="button" onclick="slideSeguinte()" aria-label="Slide seguinte">▶</button>
         </section>
         <section>
             <h2>Pronto para dar o primeiro passo?</h2>
